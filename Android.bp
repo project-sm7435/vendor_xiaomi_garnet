@@ -486,6 +486,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libadreno_app_profiles.so",
             ],
             shared_libs: [
+                "libbase",
+                "libbinder_ndk",
                 "libcutils",
                 "libhardware",
                 "libutils",
@@ -506,6 +508,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libadreno_app_profiles.so",
             ],
             shared_libs: [
+                "libbase",
+                "libbinder_ndk",
                 "libcutils",
                 "libhardware",
                 "libutils",
@@ -525,6 +529,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
     prefer: true,
     soc_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -773,6 +778,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "liblog",
             ],
         },
         android_arm64: {
@@ -784,6 +790,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "liblog",
             ],
         },
     },
@@ -10371,6 +10378,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libadreno_utils",
+                "libbase",
                 "libgsl",
                 "libz",
                 "liblog",
