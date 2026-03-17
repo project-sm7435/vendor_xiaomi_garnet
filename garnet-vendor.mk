@@ -1875,7 +1875,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.gnss@2.1-service-qti.xml \
     android.hardware.security.keymint-service-qti-rkp.xml \
-    c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
     dataconnection-saidl.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
