@@ -39,16 +39,16 @@ echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
 
 # Core control parameters for gold
 echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
-echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
+echo 70 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
 echo 30 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
 echo 100 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
-echo 3 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
+echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
 
 # Setting b.L scheduler parameters
-echo 65 > /proc/sys/walt/sched_downmigrate
-echo 71 > /proc/sys/walt/sched_upmigrate
-echo 85 > /proc/sys/walt/sched_group_downmigrate
-echo 100 > /proc/sys/walt/sched_group_upmigrate
+echo 70 85 > /proc/sys/walt/sched_downmigrate
+echo 80 95 > /proc/sys/walt/sched_upmigrate
+echo 80 > /proc/sys/walt/sched_group_downmigrate
+echo 90 > /proc/sys/walt/sched_group_upmigrate
 echo 2 > /proc/sys/walt/sched_window_stats_policy
 echo 1 > /proc/sys/walt/sched_walt_rotate_big_tasks
 echo 0 > /proc/sys/walt/sched_coloc_busy_hysteresis_enable_cpus
@@ -78,14 +78,14 @@ echo 0 > /sys/devices/system/cpu/cpufreq/policy4/walt/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/walt/up_rate_limit_us
 echo 1190000 > /sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq
 echo 691200 > /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
-echo 85 > /sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_load
+echo 90 > /sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_load
 echo -6 > /sys/devices/system/cpu/cpufreq/policy4/walt/boost
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/walt/rtg_boost_freq
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/walt/pl
 
 # configure input boost settings
 echo 1110000 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
-echo 120 > /proc/sys/walt/input_boost/input_boost_ms
+echo 150 > /proc/sys/walt/input_boost/input_boost_ms
 
 #MIUI ADD: Performance_BoostFramework
 echo 1958400 0 0 0 2400000 0 0 0 > /proc/sys/walt/input_boost/powerkey_input_boost_freq
@@ -106,7 +106,7 @@ echo 1 > /proc/sys/walt/sched_conservative_pl
 # N16 set watermark_scale_factor && set swappiness 120
 ProductName=`getprop ro.product.name`
 if [ "$ProductName" == "garnet" ] ; then
-	echo 20 > /proc/sys/vm/watermark_scale_factor
+	echo 25 > /proc/sys/vm/watermark_scale_factor
 	echo 120 > /proc/sys/vm/swappiness
 fi
 
