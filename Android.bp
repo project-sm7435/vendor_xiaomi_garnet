@@ -1081,6 +1081,42 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libgamepoweroptfeature",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgamepoweroptfeature.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libcutils",
+                "libdisplayconfig.qti",
+                "libdl",
+                "libhidlbase",
+                "liblog",
+                "libm",
+                "libpowercore",
+                "libsqlite",
+                "libtinyxml2",
+                "libutils",
+                "vendor.qti.hardware.display.config-V5-ndk",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qti.actuator.garnet_ofilm_s5khp3_gt9764ber_wide_ii_actuator",
     owner: "xiaomi",
     strip: {
