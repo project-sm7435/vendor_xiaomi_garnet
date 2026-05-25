@@ -395,6 +395,7 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.display.mapperextensions@1.0",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
                 "libhidlbase",
+                "libadreno_utils",
                 "vendor.qti.hardware.display.mapper@3.0",
                 "android.hardware.graphics.mapper@3.0",
                 "libc++",
@@ -421,6 +422,7 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.display.mapperextensions@1.0",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
                 "libhidlbase",
+                "libadreno_utils",
                 "vendor.qti.hardware.display.mapper@3.0",
                 "android.hardware.graphics.mapper@3.0",
                 "libc++",
@@ -447,6 +449,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libOpenCL.so",
             ],
             shared_libs: [
+                "liblog",
                 "libcutils",
                 "libvndksupport",
                 "libc++",
@@ -460,6 +463,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libOpenCL.so",
             ],
             shared_libs: [
+                "liblog",
                 "libcutils",
                 "libvndksupport",
                 "libc++",
@@ -472,6 +476,32 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
     prefer: true,
     soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libadreno_compiler_cl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libadreno_compiler_cl.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libdl",
+                "libm",
+                "liblog",
+                "libc++",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -549,6 +579,8 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "liblog",
+                "libnativewindow",
             ],
         },
         android_arm64: {
@@ -561,6 +593,8 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "liblog",
+                "libnativewindow",
             ],
         },
     },
