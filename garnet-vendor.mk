@@ -868,7 +868,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/firmware/gen70900_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen70900_sqe.fw \
     vendor/xiaomi/garnet/proprietary/vendor/firmware/gen71100_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gen71100_gmu.bin \
     vendor/xiaomi/garnet/proprietary/vendor/firmware/gen71100_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen71100_sqe.fw \
-    vendor/xiaomi/garnet/proprietary/vendor/firmware/gmu_gen70900.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70900.bin 
+    vendor/xiaomi/garnet/proprietary/vendor/firmware/gmu_gen70900.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70900.bin
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
@@ -881,6 +881,9 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     libCB \
     libOpenCL \
+    libOpenCL_adreno \
+    vulkan.pastel \
+    libgpu_tonemapper \
     libadreno_app_profiles \
     libadreno_utils \
     libgpudataproducer \
