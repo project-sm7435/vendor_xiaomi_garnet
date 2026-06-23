@@ -3549,6 +3549,160 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libperfconfig",
+    compile_multilib: "both",
+    multilib: {
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libperfconfig.so"],
+        },
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libperfconfig.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libqti-perfd",
+    compile_multilib: "both",
+    multilib: {
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libqti-perfd.so"],
+        },
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libqti-perfd.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libperfgluelayer",
+    compile_multilib: "both",
+    multilib: {
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libperfgluelayer.so"],
+        },
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libperfgluelayer.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libperfioctl",
+    compile_multilib: "both",
+    multilib: {
+        lib32: {
+            srcs: ["proprietary/vendor/lib/libperfioctl.so"],
+        },
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/libperfioctl.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libmemperfd",
+    srcs: ["proprietary/vendor/lib64/libmemperfd.so"],
+    vendor: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.0",
+    compile_multilib: "both",
+    multilib: {
+        lib32: {
+            srcs: ["proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so"],
+        },
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.perf@2.0.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.1",
+    compile_multilib: "both",
+    multilib: {
+        lib32: {
+            srcs: ["proprietary/vendor/lib/vendor.qti.hardware.perf@2.1.so"],
+        },
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.perf@2.1.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.2",
+    compile_multilib: "both",
+    multilib: {
+        lib32: {
+            srcs: ["proprietary/vendor/lib/vendor.qti.hardware.perf@2.2.so"],
+        },
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.perf@2.2.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.3",
+    compile_multilib: "both",
+    multilib: {
+        lib32: {
+            srcs: ["proprietary/vendor/lib/vendor.qti.hardware.perf@2.3.so"],
+        },
+        lib64: {
+            srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.perf@2.3.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
     name: "com.qti.node.hdr10pgen",
     owner: "xiaomi",
     strip: {
