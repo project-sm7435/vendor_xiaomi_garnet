@@ -10431,6 +10431,27 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libOpenCL_adreno",
+    srcs: ["proprietary/vendor/lib64/libOpenCL_adreno.so"],
+    vendor: true,
+    compile_multilib: "64",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libgpu_tonemapper",
+    srcs: ["proprietary/vendor/lib64/libgpu_tonemapper.so"],
+    vendor: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
     name: "lib-imscommon",
     owner: "xiaomi",
     strip: {
