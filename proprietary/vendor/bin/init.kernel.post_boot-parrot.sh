@@ -54,7 +54,8 @@ echo 1 > /proc/sys/walt/sched_walt_rotate_big_tasks
 echo 0 > /proc/sys/walt/sched_coloc_busy_hysteresis_enable_cpus
 
 # Gpu utilisation 
-echo "UnityMain,libunity.so,libil2cpp.so,com.miHoYo.,com.pubg.imobile,com.pubg.,com.activision.,com.MadOut.BIG,com.hottagames.nte,com.herogame.gplay.lastdayrulessurvival" > /proc/sys/walt/sched_lib_name
+echo "UnityMain,libunity.so,libil2cpp.so,com.miHoYo.,com.HoYoverse.,com.pubg.imobile,com.pubg.,com.tencent.ig,com.activision.,com.activision.callofduty.shooter,com.garena.game.codm,com.dts.freefireth,com.dts.freefiremax,com.mobilechess.gp,com.mobile.legends,com.riotgames.league.wildrift,com.supercell.brawlstars,com.supercell.clashofclans,com.supercell.clashroyale,com.epicgames.fortnite,com.netease.lztgglobal,com.ea.gp.fifamobile,com.rockstargames.gtasa,com.carxtech.sr,com.MadOut.BIG,com.hottagames.nte,com.herogame.gplay.lastdayrulessurvival" > /proc/sys/walt/sched_lib_name
+echo 255 > /proc/sys/walt/sched_lib_mask_force
 
 # cpuset parameters
 echo 0-3 > /dev/cpuset/background/cpus
