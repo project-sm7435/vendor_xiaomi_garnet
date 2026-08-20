@@ -1,0 +1,52 @@
+on post-fs-data
+    mkdir /data/vendor/camera 0755 root root
+
+    copy /vendor/etc/camera/2.png /data/vendor/camera/2.png
+    chmod 0644 /data/vendor/camera/2.png
+    chown root root /data/vendor/camera/2.png
+    restorecon /data/vendor/camera/2.png
+
+    copy /vendor/etc/camera/3.png /data/vendor/camera/3.png
+    chmod 0644 /data/vendor/camera/3.png
+    chown root root /data/vendor/camera/3.png
+    restorecon /data/vendor/camera/3.png
+
+    copy /vendor/etc/camera/4.png /data/vendor/camera/4.png
+    chmod 0644 /data/vendor/camera/4.png
+    chown root root /data/vendor/camera/4.png
+    restorecon /data/vendor/camera/4.png
+
+    copy /vendor/etc/camera/5.png /data/vendor/camera/5.png
+    chmod 0644 /data/vendor/camera/5.png
+    chown root root /data/vendor/camera/5.png
+    restorecon /data/vendor/camera/5.png
+
+    copy /vendor/etc/camera/6.png /data/vendor/camera/6.png
+    chmod 0644 /data/vendor/camera/6.png
+    chown root root /data/vendor/camera/6.png
+    restorecon /data/vendor/camera/6.png
+
+    copy /vendor/etc/camera/7.png /data/vendor/camera/7.png
+    chmod 0644 /data/vendor/camera/7.png
+    chown root root /data/vendor/camera/7.png
+    restorecon /data/vendor/camera/7.png
+
+    copy /vendor/etc/camera/26.png /data/vendor/camera/26.png
+    chmod 0644 /data/vendor/camera/26.png
+    chown root root /data/vendor/camera/26.png
+    restorecon /data/vendor/camera/26.png
+
+    copy /vendor/etc/camera/28.png /data/vendor/camera/28.png
+    chmod 0644 /data/vendor/camera/28.png
+    chown root root /data/vendor/camera/28.png
+    restorecon /data/vendor/camera/28.png
+
+    copy /vendor/etc/camera/72.png /data/vendor/camera/72.png
+    chmod 0644 /data/vendor/camera/72.png
+    chown root root /data/vendor/camera/72.png
+    restorecon /data/vendor/camera/72.png
+
+    copy /vendor/etc/camera/73.png /data/vendor/camera/73.png
+    chmod 0644 /data/vendor/camera/73.png
+    chown root root /data/vendor/camera/73.png
+    restorecon /data/vendor/camera/73.png

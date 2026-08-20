@@ -440,6 +440,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json \
     vendor/xiaomi/garnet/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
     vendor/xiaomi/garnet/proprietary/vendor/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomiSceneDetection.xml \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/camera/2.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/2.png \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/camera/3.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/3.png \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/camera/4.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/4.png \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/camera/5.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/5.png \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/camera/6.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/6.png \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/camera/7.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/7.png \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/camera/26.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/26.png \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/camera/28.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/28.png \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/camera/72.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/72.png \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/camera/73.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/73.png \
     vendor/xiaomi/garnet/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/xiaomi/garnet/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/xiaomi/garnet/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -562,6 +572,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.wlan.lowirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.wlan.lowirpcd.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/init/init.videofilter.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.videofilter.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/xiaomi/garnet/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/garnet/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
