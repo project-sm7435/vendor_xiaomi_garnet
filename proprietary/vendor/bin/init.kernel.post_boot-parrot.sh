@@ -111,7 +111,7 @@ echo 1 > /proc/sys/walt/sched_conservative_pl
 ProductName=`getprop ro.product.name`
 if [ "$ProductName" == "garnet" ] ; then
 	echo 25 > /proc/sys/vm/watermark_scale_factor
-	echo 120 > /proc/sys/vm/swappiness
+	echo 60 > /proc/sys/vm/swappiness
 fi
 
 # configure bus-dcvs

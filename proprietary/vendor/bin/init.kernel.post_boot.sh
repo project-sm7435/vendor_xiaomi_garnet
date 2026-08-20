@@ -103,7 +103,7 @@ function configure_memory_parameters() {
 	configure_zram_parameters
 	configure_read_ahead_kb_values
 
-	echo 100 > /proc/sys/vm/swappiness
+	echo 60 > /proc/sys/vm/swappiness
 	echo 0 > /proc/sys/vm/page-cluster
 
 	# Disable periodic kcompactd wakeups. We do not use THP, so having many
