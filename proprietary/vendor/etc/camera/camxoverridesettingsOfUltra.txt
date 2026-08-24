@@ -161,7 +161,7 @@ sessionResponseTimePadding=250
 sessionMaxFlushWaitTime=1000
 
 # Preview Priority
-previewPriority=110
+previewPriority=100
 
 #enable IPA dump file
 enableIPADump=TRUE
