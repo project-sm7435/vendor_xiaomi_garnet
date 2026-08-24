@@ -880,7 +880,6 @@ PRODUCT_PACKAGES += \
     libCB \
     libOpenCL \
     libOpenCL_adreno \
-    vulkan.pastel \
     libgpu_tonemapper \
     libadreno_compiler_cl \
     libadreno_app_profiles \
