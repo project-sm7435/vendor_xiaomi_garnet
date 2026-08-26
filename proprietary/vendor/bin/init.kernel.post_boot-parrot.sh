@@ -151,7 +151,7 @@ do
 done
 
 #set s2idle as default suspend mode
-echo s2idle > /sys/power/mem_sleep
+echo deep > /sys/power/mem_sleep
 
 # Enable LPM
 echo N > /sys/devices/system/cpu/qcom_lpm/parameters/sleep_disabled
