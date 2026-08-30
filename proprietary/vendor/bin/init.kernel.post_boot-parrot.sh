@@ -107,11 +107,10 @@ echo 20000000 > /proc/sys/walt/sched_task_unfilter_period
 echo 1 > /proc/sys/walt/sched_conservative_pl
 
 
-# N16 set watermark_scale_factor && set swappiness 120
+# N16 set watermark_scale_factor 
 ProductName=`getprop ro.product.name`
 if [ "$ProductName" == "garnet" ] ; then
 	echo 25 > /proc/sys/vm/watermark_scale_factor
-	echo 60 > /proc/sys/vm/swappiness
 fi
 
 # configure bus-dcvs
