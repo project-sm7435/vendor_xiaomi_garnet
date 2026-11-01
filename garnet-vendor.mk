@@ -888,6 +888,7 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     libCB \
     libOpenCL \
+    libgpu_tonemapper \
     libOpenCL_adreno \
     libadreno_compiler_cl \
     libadreno_app_profiles \
