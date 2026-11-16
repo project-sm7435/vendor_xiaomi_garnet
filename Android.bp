@@ -5,6 +5,7 @@
 soong_namespace {
     imports: [
         "hardware/qcom-caf/sm8450",
+        "hardware/qcom-caf/sm8450-6.6",
         "hardware/qcom-caf/wlan",
         "hardware/xiaomi",
         "vendor/qcom/opensource/commonsys/display",
