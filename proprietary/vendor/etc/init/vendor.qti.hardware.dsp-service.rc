@@ -7,7 +7,7 @@ service vendor.dspservice /vendor/bin/dspservice
 	user system
 	group system wakelock oem_2908
 	capabilities BLOCK_SUSPEND
-	interface vendor.qti.hardware.dsp@1.0::IDspService dspservice
+	interface aidl vendor.qti.hardware.dsp.IDspService/default
 
 	# uncomment below to disable service at boot
 	# disabled
