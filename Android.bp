@@ -4,6 +4,7 @@
 
 soong_namespace {
     imports: [
+        "device/xiaomi/garnet",
         "hardware/qcom-caf/sm8450-6.6",
         "hardware/qcom-caf/sm8450",
         "hardware/qcom-caf/wlan",
@@ -8369,6 +8370,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/camera.qcom.so",
             ],
             shared_libs: [
+                "libcamximageformatutils_shim",
                 "libprocessgroup_shim",
                 "libc++",
                 "libcutils",
