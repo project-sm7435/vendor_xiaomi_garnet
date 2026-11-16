@@ -32310,6 +32310,7 @@ cc_prebuilt_binary {
                 "libnetutils",
                 "librmnetctl",
                 "libnetmgr_utils",
+                "libnetmgrportutils_shim",
                 "libnlnetmgr",
                 "libnetmgr",
                 "libnetmgr_common",
