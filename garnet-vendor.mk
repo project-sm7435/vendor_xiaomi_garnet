@@ -1642,6 +1642,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V3-ndk_platform \
     vendor.qti.gnss-service \
     vendor.qti.hardware.AGMIPC@1.0-impl \
+    vendor.qti.hardware.AGMIPC@1.0_vendor \
     vendor.qti.hardware.ListenSoundModel@1.0-impl \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm@1.0 \
@@ -1676,6 +1677,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.1 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.pal@1.0-impl \
+    vendor.qti.hardware.pal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccvndhal@1.0-halimpl \

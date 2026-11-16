@@ -9059,7 +9059,7 @@ cc_prebuilt_library_shared {
                 "libxlog",
                 "libmisight",
                 "vendor.qti.hardware.pal@1.0-impl",
-                "vendor.qti.hardware.pal@1.0",
+                "vendor.qti.hardware.pal@1.0_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -25384,8 +25384,37 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "libbase",
                 "libar-gsl",
-                "vendor.qti.hardware.AGMIPC@1.0",
+                "vendor.qti.hardware.AGMIPC@1.0_vendor",
                 "libagm",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.AGMIPC@1.0_vendor",
+    stem: "vendor.qti.hardware.AGMIPC@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -26388,8 +26417,37 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "libbase",
-                "vendor.qti.hardware.pal@1.0",
+                "vendor.qti.hardware.pal@1.0_vendor",
                 "libar-pal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.pal@1.0_vendor",
+    stem: "vendor.qti.hardware.pal@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -31560,7 +31618,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhardware",
                 "libhidlbase",
-                "vendor.qti.hardware.AGMIPC@1.0",
+                "vendor.qti.hardware.AGMIPC@1.0_vendor",
                 "vendor.qti.hardware.AGMIPC@1.0-impl",
                 "libagm",
                 "libc++",
