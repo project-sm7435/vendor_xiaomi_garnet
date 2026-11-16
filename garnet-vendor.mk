@@ -1198,11 +1198,18 @@ PRODUCT_PACKAGES += \
     libTrustedUITZ \
     libTrustedUIVM \
     libXMFaceFocus \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
     lib_misound_asc \
     libadm \
     libadsp_default_listener \
     libadsprpc \
     libagm \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libagmclient \
     libagmmixer \
     libaidenoiser \
     libalCFR \
@@ -1311,6 +1318,7 @@ PRODUCT_PACKAGES += \
     libfastcrc \
     libfastcvdsp_stub \
     libfastcvopt \
+    libfmpal \
     libfsalgocal \
     libgame_enhance \
     libgarden \
@@ -1541,6 +1549,7 @@ PRODUCT_PACKAGES += \
     libsn220u_fw \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
+    libsndcardparser \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsns_registry_skel \
@@ -1614,6 +1623,10 @@ PRODUCT_PACKAGES += \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libvolumelistener \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
