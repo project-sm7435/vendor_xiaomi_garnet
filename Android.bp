@@ -4,8 +4,8 @@
 
 soong_namespace {
     imports: [
-        "hardware/qcom-caf/sm8450",
         "hardware/qcom-caf/sm8450-6.6",
+        "hardware/qcom-caf/sm8450",
         "hardware/qcom-caf/wlan",
         "hardware/xiaomi",
         "vendor/qcom/opensource/commonsys/display",
@@ -578,32 +578,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libgsl",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvmmem",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvmmem.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -14638,7 +14612,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libdisplaydebug",
                 "libtinyxml2_1",
-                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -14719,7 +14692,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libdisplaydebug",
-                "libsdmutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -14812,8 +14784,9 @@ cc_prebuilt_library_shared {
                 "libtinyxml2-v34",
                 "libdisplaydebug",
                 "libhidlbase",
-                "android.frameworks.sensorservice@1.0",
                 "libdmabufheap",
+                "android.frameworks.sensorservice-V1-ndk",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -22076,7 +22049,20 @@ cc_prebuilt_library_shared {
                 "libtestutils",
                 "libcrypto",
                 "libssl",
+                "libsdmdal",
+                "libsdedrm",
+                "libutils",
+                "libmemutils",
+                "libvmfilexfer",
+                "libintervmipc",
+                "libdrm",
                 "libbase",
+                "libhidlbase",
+                "libhidltransport",
+                "libcutils",
+                "android.hardware.thermal@1.0",
+                "android.hardware.thermal@2.0",
+                "libqrtr",
                 "libc++",
                 "libc",
                 "libm",
@@ -32880,12 +32866,11 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libutils",
-                "libhidltransport",
                 "libcutils",
                 "liblog",
-                "libhidlbase",
-                "vendor.display.postproc@1.0",
-                "vendor.display.color@1.7",
+                "libbase",
+                "libbinder_ndk",
+                "vendor.qti.hardware.display.color-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -34064,4 +34049,122 @@ filegroup {
         "proprietary/vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql",
         "proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql",
     ],
+}
+
+cc_prebuilt_binary {
+    name: "vendor.qti.hardware.display.color-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.qti.hardware.display.color-service",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.display.color-V1-ndk",
+                "vendor.qti.hardware.display.postproc-V1-ndk",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "libsdm-disp-vndapis",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcolor-default",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcolor-default.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libdisplaydebug",
+                "libsdm-color",
+                "libbinder",
+                "libsdmutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libintervmipc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libintervmipc.so",
+            ],
+            shared_libs: [
+                "libdisplaydebug",
+                "libqrtr",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvmfilexfer",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvmfilexfer.so",
+            ],
+            shared_libs: [
+                "libdisplaydebug",
+                "libqrtr",
+                "libmemutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
 }
