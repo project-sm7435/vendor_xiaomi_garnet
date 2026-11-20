@@ -30460,6 +30460,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "adpl",
+    allow_undefined_symbols: true,
     owner: "xiaomi",
     target: {
         android_arm64: {
@@ -32286,6 +32287,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "netmgrd",
+    allow_undefined_symbols: true,
     owner: "xiaomi",
     target: {
         android_arm64: {
