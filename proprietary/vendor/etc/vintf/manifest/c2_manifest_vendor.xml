@@ -29,8 +29,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- Codec2 HAl service -->
     <hal format="aidl">
         <name>android.hardware.media.c2</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
         <interface>
             <name>IComponentStore</name>
             <instance>default</instance>
